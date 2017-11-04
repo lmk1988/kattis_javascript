@@ -7,6 +7,11 @@ const Solution = () => {
 };
 
 const Test = [
+  {
+    Name: "",
+    Input: [],
+    Output: []
+  }
 ];
 
 module.exports.SolutionID = SolutionID;
