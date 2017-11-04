@@ -1,6 +1,20 @@
 'use strict';
 
 // Used by solutions running in karma (not node)
+//Override functions which are not available in SpiderMonkey 24
+Array.prototype.findIndex = () => {
+  throw new Error("findIndex not supported for Kattis");
+};
+Array.prototype.find = () => {
+  throw new Error("find not supported for Kattis");
+};
+Array.prototype.fill = () => {
+  throw new Error("fill not supported for Kattis");
+};
+Array.prototype.copyWithin = () => {
+  throw new Error("copyWithin not supported for Kattis");
+}
+
 // this is a factory function
 function kattis() {
   const _testInputArr = [];
@@ -30,6 +44,7 @@ function kattis() {
   }
 };
 
+//Processes a given solution file
 function SolutionWrapper(solutionFile) {
   if (solutionFile == null) {
     throw new Error("Solution File does not exist")
