@@ -3,6 +3,8 @@
 //https://open.kattis.com/problems/
 const SolutionID = "";
 
+//INPUT: readline()
+//OUTPUT: print()
 const Solution = () => {
 };
 
