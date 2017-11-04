@@ -4,14 +4,16 @@
 // this is a factory function
 function kattis() {
   const _testInputArr = [];
-  let _testOutput = "";
+  const _testOutput = [];
 
   readline.and.callFake(() => {
     return _testInputArr.shift();
   });
 
   print.and.callFake((msg) => {
-    _testOutput += msg;
+    if(msg){
+      _testOutput.push(''+msg);
+    }
   });
 
   return {
@@ -55,7 +57,7 @@ function SolutionWrapper(solutionFile) {
 
         solutionFile.Solution();
 
-        expect(kattis_environment.finalOutput()).toBe(test.Output.join("\r\n"));
+        expect(kattis_environment.finalOutput().toString()).toBe(test.Output.toString());
       });
     }
   });
