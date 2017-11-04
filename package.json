@@ -1,0 +1,20 @@
+{
+  "name": "kattis-codespace",
+  "version": "1.0.0",
+  "description": "An environment to ease coding Kattis using javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "karma start --browsers ChromeHeadless --solution",
+    "test-all": "karma start --browsers ChromeHeadless --solution *"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "glob-fs": "^0.1.7",
+    "jasmine-core": "^2.8.0",
+    "karma": "^1.7.1",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-jasmine": "^1.1.0"
+  },
+  "dependencies": {}
+}
