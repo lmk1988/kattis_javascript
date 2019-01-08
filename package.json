@@ -11,10 +11,10 @@
   "license": "ISC",
   "devDependencies": {
     "glob-fs": "^0.1.7",
-    "jasmine-core": "^2.8.0",
-    "karma": "^1.7.1",
+    "jasmine-core": "^3.3.0",
+    "karma": "^3.1.4",
     "karma-chrome-launcher": "^2.2.0",
-    "karma-jasmine": "^1.1.0"
+    "karma-jasmine": "^2.0.1"
   },
   "dependencies": {}
 }
