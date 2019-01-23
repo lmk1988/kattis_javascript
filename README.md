@@ -1,5 +1,7 @@
 
- Workspace environment for Kattis javascript.
+ Workspace environment for Kattis javascript (spider monkey).
+
+ https://open.kattis.com/help/javascriptspidermonkey
 
  Solutions are located in `/solutions` folder
  There are some sample solution as reference
