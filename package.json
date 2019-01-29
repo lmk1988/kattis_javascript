@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "karma start --browsers ChromeHeadless --solution",
-    "test-all": "karma start --browsers ChromeHeadless --solution *"
+	"test-stage": "karma start --browsers ChromeHeadless --solution *",
+	"test-working": "karma start --browsers ChromeHeadless --solution *",
+    "test-all": "karma start --browsers ChromeHeadless --solution **/*",
+	"test-archive": "karma start --browsers ChromeHeadless --solution archive/*"
   },
   "author": "",
   "license": "ISC",
