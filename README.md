@@ -18,18 +18,29 @@ Setup:
 
 >`npm install -g karma-cli`
 
+To run all solutions (in /solutions root folder only)
+
+>`npm run test-stage`
+OR
+>`npm run test-working`
+
 To run all solutions:
 
 >`npm run test-all`
+
+To run archive solutions:
+
+>`npm run test-archive`
 
 To run one solution:
 
 >`npm run test <solution file name>`
 
 >e.g.
->>`npm run test hello`
 
 >>`npm run test pot`
 
 >>`npm run test r2`
+
+>>`npm run test archive/hello`
 

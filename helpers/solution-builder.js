@@ -15,13 +15,19 @@ function Build(solution) {
   if (solution == null || typeof solution !== 'string') {
     throw new Error("Invalid --solution parameter");
   }
-
-  const solutionPath = './solutions/' + solution + '.js'
-  if (solution != '*' && !fs.existsSync(solutionPath)) {
-    throw new Error("Solution '" + solution + "' does not exist as " + solutionPath);
+  
+  let files;
+  let solutionPath = './solutions/' + solution + '.js';
+  
+  if(solution == '*' || solution == '**/*' || solution == 'archive/*') {
+	files = glob.readdirSync(solutionPath, {});
+  } else {
+	if (!fs.existsSync(solutionPath)) {
+		throw new Error("Solution '" + solution + "' does not exist as " + solutionPath);
+	}
+	files = [solutionPath];
   }
 
-  const files = solution == '*' ? glob.readdirSync(solutionPath, {}) : [solutionPath];
   console.log(files);
 
   let KATTIS_TEST = '[' + os.EOL;
