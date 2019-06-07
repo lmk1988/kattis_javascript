@@ -5,17 +5,17 @@
   "main": "index.js",
   "scripts": {
     "test": "karma start --browsers ChromeHeadless --solution",
-	"test-stage": "karma start --browsers ChromeHeadless --solution *",
-	"test-working": "karma start --browsers ChromeHeadless --solution *",
+    "test-stage": "karma start --browsers ChromeHeadless --solution *",
+    "test-working": "karma start --browsers ChromeHeadless --solution *",
     "test-all": "karma start --browsers ChromeHeadless --solution **/*",
-	"test-archive": "karma start --browsers ChromeHeadless --solution archive/*"
+    "test-archive": "karma start --browsers ChromeHeadless --solution archive/*"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "glob-fs": "^0.1.7",
-    "jasmine-core": "^3.3.0",
-    "karma": "^3.1.4",
+    "jasmine-core": "^3.4.0",
+    "karma": "^4.1.0",
     "karma-chrome-launcher": "^2.2.0",
     "karma-jasmine": "^2.0.1"
   },
