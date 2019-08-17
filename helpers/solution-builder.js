@@ -1,7 +1,5 @@
 const fs = require('fs');
-const glob = require('glob-fs')({
-  gitignore: true
-});
+const glob = require('glob');
 
 const KATTIS_CONFIG = ".kattis.conf.js";
 const os = require("os");
@@ -20,7 +18,7 @@ function Build(solution) {
   let solutionPath = './solutions/' + solution + '.js';
   
   if(solution == '*' || solution == '**/*' || solution == 'archive/*') {
-	files = glob.readdirSync(solutionPath, {});
+	files = glob.sync(solutionPath, {});
   } else {
 	if (!fs.existsSync(solutionPath)) {
 		throw new Error("Solution '" + solution + "' does not exist as " + solutionPath);
