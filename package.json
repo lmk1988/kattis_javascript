@@ -10,6 +10,7 @@
     "test-all": "karma start --browsers ChromeHeadless --solution **/*",
     "test-archive": "karma start --browsers ChromeHeadless --solution archive/*"
   },
+  "repository": "github:lmk1988/kattis_javascript",
   "author": "",
   "license": "ISC",
   "devDependencies": {
